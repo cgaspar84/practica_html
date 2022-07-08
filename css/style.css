@@ -1,0 +1,25 @@
+body {
+    font-family: Inter, sans-serif;
+}
+.form-header {
+    font-size: 2em;
+    color: #2c3345;
+    font-weight: 600;
+}
+.form-label {
+    margin-left: 2px;
+    margin-bottom: 14px;
+}
+.form-input {
+    border-color: rgb(184,189,201);
+    height: 40px;
+    box-sizing: border-box;
+}
+.box {
+    width: 100px;
+    padding: 100px;
+    margin:  10px;
+    background-color: chocolate;
+    border-radius: 10px;
+    border: 5px solid black;
+}

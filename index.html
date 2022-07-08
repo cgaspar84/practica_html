@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>:: Practica HTML ::</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+</head>
+<body>
+
+    <h1 class="form-header">Formulario de Inscripcion</h1>
+    
+    <p>Complete sus datos para inscribirse a nuestro curso online.</p>
+
+    <form>
+        <p>Datos personales:</p>
+        <label for="fName" class="form-label">Nombre:</label>
+        <input type="text" id="fName" name="fName"><br>
+        
+        <label for="fSurname" class="form-label">Apellido:</label>
+        <input type="text" id="fSurname" name="fSurname">
+        <br>
+        <br>
+
+        <label for="fGender" class="form-label">Sexo:</label>
+        <select>
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+            <option valeu="NaN">N/A</option>
+        
+        </select>
+        <br>
+        
+        <label for="fAddress1" class="form-label">Direccion:</label>
+        <input type="text" id="fAddress1" name="fAddress1">
+        <br>
+
+        <label for="fAddress2" class="form-label">Nro:</label>
+        <input type="text" id="fAddress2" name="fAddress2">
+        <br>
+
+        <label for="fCity" class="form-label">Ciudad:</label>
+        <input type="text" id="fCity" name="fCity">
+        <br>
+
+        <p>Datos de contacto:</p>
+
+        <label for="fMail" class="form-label">Email:</label>
+        <input type="text" id="fMail" name="fMail" placeholder="ej; tumail@abc.edu.ar">
+
+        <label for="fMobile" class="form-label">Celular:</label>
+        <input type="tel" id="fMobile" name="fMobile" data-type="mask-number" data-defaultvalue autocomplete="tel-local" 
+        data-component="phone"
+        placeholder="(000) 000-000000">
+        <br>
+    </form>
+    
+</body>
+</html>
