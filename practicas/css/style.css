@@ -1,0 +1,66 @@
+body {
+    font-family: Inter, sans-serif;
+    color: rgba(255, 255, 255, 0.854);
+}
+.main-container {
+    display: grid;
+    background-color: #1c323d;
+    height: 95vh;    
+}
+.header-container {
+    display: grid;
+    padding: 5px;
+    grid-template-columns: auto auto auto;
+    height: 250px;
+}
+/* IMG Element */
+img {
+    height: 100%;
+    
+}
+.header-container .header-item1 {
+    height: 250px;
+    background-image: url(https://www.turijobs.com/blog/wp-content/uploads/2018/07/pexels-photo-590016-1024x678.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header-container .header-item2 {
+    background-color: #7290a4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding: 5px;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.header-navbar {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /*grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));*/
+    padding: 10px;
+    list-style: none;  
+    margin-bottom: 0px;
+}
+.header-navbar li {
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: center;    
+}
+.header-navbar li a {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    line-height: 50px;
+}
+.header-navbar li a:hover {
+    color: bisque;
+}
+
+
+
+
+
+
+

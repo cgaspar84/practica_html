@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .box {
+            display: flex;
+            /*padding: 20px;*/
+            flex-flow: row wrap;
+            text-align: center;
+
+        }
+        .box >  * {
+            -webkit-flex: auto;
+            padding: 0;
+            flex: 1 100%;
+            
+        }
+        div {
+            border: 1px solid #cecece;
+        }
+        .main {
+            order: 2;
+            flex: 3 0px;
+            background-color: coral;
+        }
+        .aside-1 {
+            order: 1;
+            background-color: blueviolet;
+        }
+        .aside-2 {
+            order: 3;
+            background-color: blue;
+        }
+        .header {
+            background-color: burlywood;
+        }
+        .footer {
+            order: 4;
+            background-color: cadetblue;
+        }
+        @media all and (min-width:800) {
+            .main {
+                order: 2;
+            }
+            .aside-1 {
+                order: 1;
+            }
+            .aside-2 {
+                order: 3;
+            }
+            .footer{
+                order: 4;
+            }
+        }
+
+        .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header-img {
+    width: 19%;
+    height: 100px;
+    margin-bottom: 2%;
+    
+    background-color:  blueviolet;
+}
+.header-item {
+    width: 79%;
+    height: 100px;
+    margin-bottom: 2%;
+    text-align: center;
+    background-color: bisque;
+}
+.item-box {
+    flex: 100%;
+    justify-content: space-around;
+}
+.cv-item {
+    flex: 90%;
+    margin: 10px;
+    height: 50px;
+    background-color: slategray;
+    text-align: center;
+    line-height: 50px;
+    color: azure;
+    border: solid 10px;
+    border-color: cornflowerblue;            
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <header class="header">ENCABEZADO</header>
+        <article class="main">
+            <p>Prueba</p>
+        </article>
+        <div class="aside">
+        <aside class="aside aside-1">ASIDE</aside>
+        <aside class="aside aside-2">ASIDE</aside>
+        </div>
+        <footer class="footer">PIE PAGINA</footer>
+    </div>
+
+    <div class="box">
+        <div class="header-img">
+        <img src="https://www.turijobs.com/blog/wp-content/uploads/2018/07/pexels-photo-590016-1024x678.jpeg" alt="sample" height="100px" width="100px"> </div>
+        <div class="header-item">
+        <header class="header">DATOS BASICOS</header>
+        </div>
+        <div class="item-box"></div>
+            <aside class="cv-item">FORMACION</aside>
+            <aside class="cv-item">TRABAJOS</aside>
+            <aside class="cv-item">CURSOS</aside>
+        </div>
+    </div>  
+</body>
+</html>
